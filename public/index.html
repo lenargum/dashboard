@@ -23,7 +23,7 @@
     <!-- /Fonts -->
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav-menu.css">
+    <link rel="stylesheet" href="css/drawer.css">
 
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
@@ -34,65 +34,64 @@
 </noscript>
 <div id="app"></div>
 <div class="wrapper">
-    <div class="nav-menu">
+    <div class="drawer">
         <div class="logo">
-            <img class="logo__top_lines" src="img/logo/top_lines.svg" alt="">
+            <img class="logo__top_lines" src="img/drawer/logo/top_lines.svg" alt="">
             <div class="logo__title">ADS</div>
             <div class="logo__version">V2.00</div>
-            <img class="logo__bottom_lines" src="img/logo/bottom_lines.svg" alt="">
+            <img class="logo__bottom_lines" src="img/drawer/logo/bottom_lines.svg" alt="">
         </div>
-        <div class="nav-menu-profile">
+        <div class="drawer-profile">
             <div class="avatar">
-                <img class="avatar__background" src="img/avatar/avatar__background.svg" alt="">
+                <img class="avatar__background" src="img/drawer/avatar/avatar__background.svg" alt="">
                 <img class="avatar__pic" src="img/stub-man.png" alt="">
-                <img class="avatar__online" src="img/avatar/avatar__online.svg" alt="">
-                <img class="avatar__check" src="img/avatar/avatar__check.svg" alt="">
+                <img class="avatar__online" src="img/drawer/avatar/avatar__online.svg" alt="">
+                <img class="avatar__check" src="img/drawer/avatar/avatar__check.svg" alt="">
             </div>
-            <div class="nav-menu-profile__initials">MJ</div>
-            <div class="nav-menu-profile__position">Graphic
+            <div class="drawer-profile__initials">MJ</div>
+            <div class="drawer-profile__position">Graphic
                 Designer</div>
         </div>
-        <div class="nav-menu-icon">
-            <div class="nav-menu-icon__background">
-                <img class="nav-menu-icon__icon" src="img/nav-menu-icon/icon.svg" alt=""/>
+        <div class="menu-icon">
+            <div class="menu-icon__background">
+                <img class="menu-icon__icon" src="img/drawer/menu-icon/icon.svg" alt=""/>
             </div>
-            <div class="nav-menu-icon__underline"></div>
+            <div class="menu-icon__underline"></div>
         </div>
-        <div class="nav-menu-sections">
-            <div class="nav-menu-section">
-                <div class="nav-menu-section__title">MAIN</div>
-                <img class="nav-menu-item" src="img/nav-menu-sections/main/dashboard.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/main/color.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/main/skin.svg" alt="">
+        <div class="menu-sections">
+            <div class="drawer-section">
+                <div class="drawer-section__title">MAIN</div>
+                <img class="drawer-item" src="img/drawer/menu-sections/main/dashboard.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/main/color.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/main/skin.svg" alt="">
             </div>
-            <div class="nav-menu-section">
-                <div class="nav-menu-section__title">COMP</div>
-                <img class="nav-menu-item" src="img/nav-menu-sections/comp/basic.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/comp/editors.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/comp/table.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/comp/play.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/comp/forms.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/comp/smile.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/comp/upload.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/comp/info.svg" alt="">
+            <div class="drawer-section">
+                <div class="drawer-section__title">COMP</div>
+                <img class="drawer-item" src="img/drawer/menu-sections/comp/basic.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/comp/editors.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/comp/table.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/comp/play.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/comp/forms.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/comp/smile.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/comp/upload.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/comp/info.svg" alt="">
             </div>
-            <div class="nav-menu-section">
-                <div class="nav-menu-section__title">DATA</div>
-                <img class="nav-menu-item" src="img/nav-menu-sections/data/charts.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/data/location.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/data/graph.svg" alt="">
+            <div class="drawer-section">
+                <div class="drawer-section__title">DATA</div>
+                <img class="drawer-item" src="img/drawer/menu-sections/data/charts.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/data/location.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/data/graph.svg" alt="">
             </div>
-            <div class="nav-menu-section">
-                <div class="nav-menu-section__title">PAGES</div>
-                <img class="nav-menu-item" src="img/nav-menu-sections/pages/warning.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/pages/login.svg" alt="">
-                <img class="nav-menu-item" src="img/nav-menu-sections/pages/display.svg" alt="">
+            <div class="drawer-section">
+                <div class="drawer-section__title">PAGES</div>
+                <img class="drawer-item" src="img/drawer/menu-sections/pages/warning.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/pages/login.svg" alt="">
+                <img class="drawer-item" src="img/drawer/menu-sections/pages/display.svg" alt="">
             </div>
         </div>
-
     </div>
     <div class="dashboard">
-
+        <div class="top"></div>
     </div>
 </div>
 <!-- built files will be auto injected -->
