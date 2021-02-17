@@ -14,13 +14,14 @@ html, body {
 
 }
 
-.nav-menu {
+.drawer {
   background-color: #313131;
   height: 100%;
   width: 61px;
 }
 
 .dashboard {
+  width: 100%;
   height: fit-content;
   background-color: #fafafa;
 }
