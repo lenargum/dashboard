@@ -24,6 +24,8 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/drawer.css">
+    <link rel="stylesheet" href="css/nav.css">
+
 
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
@@ -92,7 +94,25 @@
         </div>
     </div>
     <div class="dashboard">
-        <div class="top"></div>
+        <div class="nav">
+            <!-- Не знаю как тут БЭМ по другому применить -->
+            <div class="nav-background">
+                <img class="nav__menu-icon" src="img/nav/menu-icon_black.svg" alt="">
+                <div class="search-bar">
+                    <img class="search-bar__icon" src="img/nav/search-bar/search-bar__icon.svg" alt=""/>
+                    <div class="text-field">
+                        <div class="search-bar__hint">Search Something...</div>
+                    </div>
+                </div>
+                <div class="nav-bar">
+                    <img class="nav-bar__power" src="./img/nav/nav-bar-icons/power.svg" alt=""/>
+                    <img class="nav-bar__setting" src="./img/nav/nav-bar-icons/setting.svg" alt=""/>
+                    <img class="nav-bar__chat" src="./img/nav/nav-bar-icons/chat.svg" alt=""/>
+                    <img class="nav-bar__notification" src="./img/nav/nav-bar-icons/notification.svg" alt=""/>
+                    <img class="nav-bar__fullscreen" src="./img/nav/nav-bar-icons/fullscreen.svg" alt=""/>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- built files will be auto injected -->
