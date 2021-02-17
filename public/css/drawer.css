@@ -8,7 +8,7 @@
     margin: 12px 0 12px;
 }
 
-.logo__top_lines{
+.logo__top_lines {
     width: 52px;
     height: 6px;
     padding: 0 7px 5px 2px;
@@ -40,7 +40,7 @@
     color: #ff6a6a;
 }
 
-.logo__bottom_lines{
+.logo__bottom_lines {
     width: 53px;
     height: 5px;
     padding: 0 4px;
@@ -62,7 +62,7 @@
 .avatar {
     display: flex;
 
-    width:  37px;
+    width: 37px;
     height: 41px;
 }
 
