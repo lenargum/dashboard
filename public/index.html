@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -27,12 +27,26 @@
     <link rel="stylesheet" href="css/nav-menu.css">
 
     <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+</noscript>
+<div id="app"></div>
+<div class="wrapper">
+    <div class="nav-menu">
+        <div class="logo">
+            <img class="logo__top_lines" src="img/logo/top_lines.svg" alt="">
+            <div class="logo__title">ADS</div>
+            <div class="logo__version">V2.00</div>
+            <img class="logo__bottom_lines" src="img/logo/bottom_lines.svg" alt="">
+        </div>
+    </div>
+    <div class="dashboard">
+
+    </div>
+</div>
+<!-- built files will be auto injected -->
+</body>
 </html>

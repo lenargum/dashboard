@@ -1,0 +1,35 @@
+html, body {
+  height:100%;
+  padding:0;
+  margin:0;
+}
+
+.wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: flex-start;
+
+}
+
+.nav-menu {
+  background-color: #313131;
+  height: 100vh;
+  width: 30.5px;
+}
+
+.dashboard {
+  height: fit-content;
+  background-color: #fafafa;
+}
+
+/*
+Lato-Bold
+Montserrat-Regular
+OpenSans
+OpenSans-Bold
+OpenSans-Semibold
+*/
+
