@@ -1,46 +1,60 @@
 .logo {
     display: flex;
     flex-flow: column;
-    background-color: transparent;
-    margin: 6px 0 6px;
     height: auto;
     width: auto;
+
+    background-color: transparent;
+    margin: 12px 0 12px;
 }
 
 .logo__top_lines{
-    width: 26px;
-    height: 3px;
-    padding: 0px 3.5px 2.5px 1px;
+    width: 52px;
+    height: 6px;
+    padding: 0 7px 5px 2px;
 }
 
 .logo__title {
-    padding: 0 4.5px 0 6.5px;
+    padding: 0 9px 0 13px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 8.5px;
+    font-size: 17px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 6px;
-    letter-spacing: 0.85px;
+    line-height: 12px;
+    letter-spacing: 1.7px;
     text-align: left;
     color: #ffffff;
 }
 
 .logo__version {
-    padding: 2.5px 6.5px 2.5px 7.5px;
+    padding: 5px 13px 5px 15px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 5px;
+    font-size: 10px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 3.5px;
-    letter-spacing: 0.5px;
+    line-height: 7px;
+    letter-spacing: 1px;
     text-align: left;
     color: #ff6a6a;
 }
 
 .logo__bottom_lines{
-    width: 26.5px;
-    height: 2.5px;
-    padding: 0 2px;
+    width: 53px;
+    height: 5px;
+    padding: 0 4px;
+}
+
+.nav-menu-profile {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: auto;
+    margin: 73px 0 49px;
+
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
 }
