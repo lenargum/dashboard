@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
+    <link rel="stylesheet" type="text/css" href="scss/content.scss"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -22,9 +23,7 @@
     -->
     <!-- /Fonts -->
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/drawer.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="style.css">
 
 
     <title><%= htmlWebpackPlugin.options.title %></title>
@@ -64,38 +63,72 @@
         <div class="menu-sections">
             <div class="menu-section">
                 <div class="menu-section__title">MAIN</div>
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/main/dashboard.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/main/color.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/main/skin.svg" alt="">
+                <div class="menu-item menu-item_active">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/main/dashboard.svg"
+                         alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/main/color.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/main/skin.svg" alt="">
+                </div>
             </div>
             <div class="menu-section">
                 <div class="menu-section__title">COMP</div>
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/comp/basic.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/comp/editors.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/comp/table.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/comp/play.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/comp/forms.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/comp/smile.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/comp/upload.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/comp/info.svg" alt="">
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/comp/basic.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/comp/editors.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/comp/table.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/comp/play.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/comp/forms.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/comp/smile.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/comp/upload.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/comp/info.svg" alt="">
+                </div>
             </div>
             <div class="menu-section">
                 <div class="menu-section__title">DATA</div>
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/data/charts.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/data/location.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/data/graph.svg" alt="">
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/data/charts.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/data/location.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/data/graph.svg" alt="">
+                </div>
             </div>
             <div class="menu-section">
                 <div class="menu-section__title">PAGES</div>
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/pages/warning.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/pages/login.svg" alt="">
-                <img class="menu-section__menu-item" src="img/drawer/menu-sections/pages/display.svg" alt="">
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/pages/warning.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/pages/login.svg" alt="">
+                </div>
+                <div class="menu-item">
+                    <img class="menu-section__menu-icon" src="img/drawer/menu-sections/pages/display.svg" alt="">
+                </div>
             </div>
         </div>
     </div>
     <div class="dashboard">
         <div class="nav">
-            <!-- Не знаю как тут БЭМ по другому применить -->
             <div class="nav-background">
                 <img class="nav__menu-icon" src="img/nav/menu-icon_black.svg" alt="">
                 <div class="search-bar">
@@ -113,6 +146,26 @@
                 </div>
             </div>
         </div>
+        <div class="dashboard-content">
+            <div class="dashboard-title">
+                <h1>Dashboard</h1>
+                <h4>Welcome to Admin Sayang, Responsive Web Admin Template</h4>
+            </div>
+
+            <div class="map">
+                <div class="map-control">
+                    <div class="map-control-upper-container">
+                        <img class="map-control-upper-container__plus-sign" src="img/content/map/control/plus-sign.svg" alt="">
+                    </div>
+                    <div class="map-control-container">
+                        <img class="map-control-container__minus-sign" src="img/content/map/control/minus-sign.svg" alt="">
+                    </div>
+                </div>
+                <img class="map__content" src="img/content/map/map-content.svg" alt=""/>
+
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- built files will be auto injected -->
