@@ -1,118 +1,289 @@
 h1 {
-    font-family: "OpenSans", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 29px;
-    letter-spacing: normal;
-    text-align: left;
-    color: #313131;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 29px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #313131;
 }
 
 h2 {
-    font-family: "OpenSans", sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 29px;
-    letter-spacing: normal;
-    text-align: left;
-    color: #313131;
+  font-family: "Open Sans", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 29px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #313131;
 }
 
 h3 {
-    font-family: "OpenSans", sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 29px;
-    letter-spacing: normal;
-    text-align: left;
-    color: #313131;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 29px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #313131;
 }
 
 h4 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    font-family: "OpenSans", sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #a6a6a6;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a6a6a6;
 }
 
 h5 {
-    font-family: "OpenSans", sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 29px;
-    letter-spacing: normal;
-    text-align: left;
-    color: #313131;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 14.6px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.34;
+  letter-spacing: normal;
+  text-align: right;
+  color: #000000;
+}
+
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 29px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #313131;
+}
+
+.black-900 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: right;
+  color: #313131;
 }
 
 
 .dashboard-container {
-    width: 100%;
-    height: min-content;
-    padding: 16px 28px 32px 26px;
+  width: 100%;
+  height: min-content;
+  padding: 16px 28px 32px 26px;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .dashboard-content {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-items: start;
+  align-items: start;
+
+
+  .dashboard-title {
+    @extend .dashboard-container;
+  }
+
+  .map {
+    @extend .dashboard-container;
+
+    &-control {
+      position: absolute;
+
+      display: flex;
+      flex-flow: column;
+      width: 41px;
+      border: solid 1px #cccccc;
+
+      &-panel {
+
+      }
+
+      &-container {
+        display: flex;
+        width: 41px;
+        height: 41px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .map-control-container + .map-control-container {
+        border-top: solid 1px #cccccc;
+      }
+    }
+
+    &__content {
+      width: 100%;
+      height: 100%;
+      //padding: 16px 28px 32px 26px;
+    }
+  }
+}
+
+.statistics {
+  @extend .dashboard-container;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+
+  &-container {
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     justify-items: start;
     align-items: start;
+    width: 100%;
+    height: min-content;
+    padding: 22px 16px 22px 37px;
+    position: relative;
+  }
 
-    .dashboard-title {
-        @extend .dashboard-container;
-        border-bottom: 1px solid #e7e7e7;
+  .statistics-container + .statistics-container {
+    height: auto;
+    border-left: 1px solid #e7e7e7;
+  }
+
+  &-heading {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+    align-items: center;
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 32px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
 
-    .map {
-        @extend .dashboard-container;
-
-        &-control{
-            position: absolute;
-
-            display: flex;
-            flex-flow: column;
-            width: 41px;
-            border: solid 1px #cccccc;
-
-            &-panel{
-
-            }
-
-            &-container{
-                display: flex;
-                width: 41px;
-                height: 41px;
-                align-items: center;
-                justify-content: center;
-            }
-
-            &-upper-container{
-                @extend .map-control-container;
-                border-bottom: solid 1px #cccccc;
-            }
-        }
-
-        &__content{
-            padding: 16px 28px 32px 26px;
-        }
+    &__arrow {
+      width: 7px;
+      height: 9px;
     }
+
+    &__percent {
+      font-family: "Open Sans", sans-serif;
+      font-size: 14.6px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: right;
+
+      &-up {
+        @extend .statistics-heading__percent;
+        color: #2fad35;
+      }
+
+      &-down {
+        @extend .statistics-heading__percent;
+        color: #ff494a;
+      }
+    }
+  }
+
+  &__graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &-vertical-graphs{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    width: 100%;
+  }
+
+  &-vertical-graph{
+    &-header{
+      display: flex;
+      flex-flow: row nowrap;
+      flex-shrink: 0;
+      justify-content: space-between;
+
+      &__title{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        color: #7b7b7b;
+      }
+
+      &__percent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 6px 3px 6px;
+        border-radius: 11px;
+        border: solid 1px;
+
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 9px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+
+        &-today{
+          @extend .statistics-vertical-graph-header__percent;
+          color: #2abb9b;
+        }
+
+        &-yesterday{
+          @extend .statistics-vertical-graph-header__percent;
+          color: #4f80e1;
+        }
+      }
+    }
+
+    &__graph{
+      width: 100%;
+    }
+  }
 }
