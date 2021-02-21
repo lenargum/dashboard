@@ -228,7 +228,7 @@ h6 {
     height: 100%;
   }
 
-  &-vertical-graphs{
+  &-vertical-graphs {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -236,14 +236,14 @@ h6 {
     width: 100%;
   }
 
-  &-vertical-graph{
-    &-header{
+  &-vertical-graph {
+    &-header {
       display: flex;
       flex-flow: row nowrap;
       flex-shrink: 0;
       justify-content: space-between;
 
-      &__title{
+      &__title {
         font-family: 'Open Sans', sans-serif;
         font-size: 12px;
         font-weight: bold;
@@ -253,7 +253,7 @@ h6 {
         color: #7b7b7b;
       }
 
-      &__percent{
+      &__percent {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -270,19 +270,19 @@ h6 {
         line-height: 1;
         letter-spacing: normal;
 
-        &-today{
+        &-today {
           @extend .statistics-vertical-graph-header__percent;
           color: #2abb9b;
         }
 
-        &-yesterday{
+        &-yesterday {
           @extend .statistics-vertical-graph-header__percent;
           color: #4f80e1;
         }
       }
     }
 
-    &__graph{
+    &__graph {
       width: 100%;
     }
   }
