@@ -212,6 +212,19 @@ OpenSans-Semibold
   padding: 15px 0 15px;
 }
 
+.menu-items {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: auto;
+}
+.menu-items::before {
+  content: "";
+  height: 1px;
+  width: 50%;
+  background-color: yellow;
+}
+
 .menu-item {
   display: flex;
   width: 100%;
