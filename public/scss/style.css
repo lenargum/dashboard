@@ -219,14 +219,25 @@ OpenSans-Semibold
   align-items: center;
   justify-content: center;
 }
-
-.menu-section__menu-icon {
-  width: 19px;
-  height: 19px;
+.menu-item_active {
+  background-color: #5F5F5F;
+}
+.menu-item:hover {
+  background-color: yellow;
+}
+.menu-item:hover .child {
+  color: red;
 }
 
-.menu-item_active {
-  background-color: red;
+.menu-section__menu-icon {
+  text-align: center;
+  fill: #c1c1c1;
+  width: auto;
+  height: auto;
+}
+
+.menu-item:hover .menu-section__menu-icon {
+  fill: red;
 }
 
 .nav {

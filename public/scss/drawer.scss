@@ -192,13 +192,27 @@
   height: 61px;
   align-items: center;
   justify-content: center;
+
+  &_active {
+    background-color: #5F5F5F;
+  }
+
+  &:hover {
+    background-color: yellow;
+  }
+
+  &:hover .child{
+    color: red;
+  }
 }
 
 .menu-section__menu-icon {
-  width: 19px;
-  height: 19px;
+  text-align: center;
+  fill: rgb(193, 193, 193);
+  width: auto;
+  height: auto;
 }
 
-.menu-item_active {
-  background-color: red;
+.menu-item:hover .menu-section__menu-icon{
+  fill: red;
 }
