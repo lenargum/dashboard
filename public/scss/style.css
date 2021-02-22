@@ -91,13 +91,13 @@ OpenSans-Semibold
   width: auto;
   margin: 73px 0 49px;
   align-items: center;
-  justify-items: center;
   justify-content: center;
-  align-content: center;
 }
 
 .avatar {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 37px;
   height: 41px;
 }
