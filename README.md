@@ -1,5 +1,7 @@
 # my_dashboard
 
+[Dashboard on Github Pages](https://lenargum.github.io/dashboard/) 
+
 ## Project setup
 ```
 npm install
