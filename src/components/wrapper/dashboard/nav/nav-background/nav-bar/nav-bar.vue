@@ -9,17 +9,19 @@
         <div class="nav-bar-menu-item-dropdown__item span">
           Log out
         </div>
-        <!--        <span>Log out</span>-->
       </div>
     </div>
     <div class="nav-bar-menu-item">
       <SettingIcon/>
+      <SettingNotificationBadge class="nav-bar-menu-item_notification-badge"/>
     </div>
     <div class="nav-bar-menu-item">
       <ChatIcon/>
+      <ChatNotificationBadge class="nav-bar-menu-item_notification-badge"/>
     </div>
     <div class="nav-bar-menu-item">
       <NotificationIcon/>
+      <NotificationNotificationBadge class="nav-bar-menu-item_notification-badge"/>
     </div>
     <div class="nav-bar-menu-item">
       <FullscreenIcon/>
@@ -30,18 +32,25 @@
 <script>
 import PowerIcon from "@/assets/img/nav/nav-bar-icons/power.svg"
 import SettingIcon from "@/assets/img/nav/nav-bar-icons/setting.svg"
+import SettingNotificationBadge from "@/assets/img/nav/nav-bar-icons/setting-notification-badge.svg"
 import ChatIcon from "@/assets/img/nav/nav-bar-icons/chat.svg"
+import ChatNotificationBadge from "@/assets/img/nav/nav-bar-icons/chat-notification-badge.svg"
 import NotificationIcon from "@/assets/img/nav/nav-bar-icons/notification.svg"
+import NotificationNotificationBadge from "@/assets/img/nav/nav-bar-icons/notification-notification-badge.svg"
 import FullscreenIcon from "@/assets/img/nav/nav-bar-icons/fullscreen.svg"
 
+// todo: crop icons and notification badges to make them look more centered
 
 export default {
   name: "NavBar",
   components: {
     PowerIcon,
     SettingIcon,
+    SettingNotificationBadge,
     ChatIcon,
+    ChatNotificationBadge,
     NotificationIcon,
+    NotificationNotificationBadge,
     FullscreenIcon
   }
 }
@@ -66,6 +75,10 @@ export default {
 
     width: 30px;
     height: 30px;
+
+    &_notification-badge {
+      position: absolute;
+    }
 
     &:hover {
       cursor: pointer;

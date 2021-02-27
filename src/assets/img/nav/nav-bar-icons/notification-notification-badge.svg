@@ -1,0 +1,10 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="27px" height="28px">
+    <path fill-rule="evenodd" fill="rgb(244, 70, 71)"
+          d="M17.000,-0.000 C22.523,-0.000 27.000,4.477 27.000,10.000 C27.000,15.522 22.523,20.000 17.000,20.000 C11.477,20.000 7.000,15.522 7.000,10.000 C7.000,4.477 11.477,-0.000 17.000,-0.000 Z"/>
+    <text kerning="auto" font-family="Myriad Hebrew" fill="rgb(0, 0, 0)" font-size="11px" x="14px" y="14px">
+        <tspan font-size="11px" font-family="'Lato', sans-serif" font-weight="bold" fill="#FFFFFF">&#53;</tspan>
+    </text>
+</svg>
