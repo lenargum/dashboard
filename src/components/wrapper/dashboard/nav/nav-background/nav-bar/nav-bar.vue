@@ -58,9 +58,9 @@ export default {
 
 <style lang="scss" scoped>
 .nav-bar {
-  width: 100%;
-  height: 100%;
   display: flex;
+  flex-basis: 100%;
+  height: 100%;
   flex-flow: row-reverse nowrap;
   justify-items: start;
   align-items: center;

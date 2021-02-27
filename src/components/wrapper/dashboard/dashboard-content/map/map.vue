@@ -24,7 +24,7 @@ export default {
 .map {
 
   &__content {
-    width: 100%;
+    flex-basis: 100%;
     height: 100%;
   }
 }

@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 .nav {
-  width: 100%;
+  flex-basis: 100%;
   height: 60px;
 }
 </style>

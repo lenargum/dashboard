@@ -25,7 +25,7 @@ export default {
   flex-flow: row-reverse nowrap;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  flex-basis: 100%;
   max-width: 250px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -38,8 +38,6 @@ export default {
   overflow: hidden;
 
   &__icon {
-    width: 11px;
-    height: 11px;
     display: flex;
     flex-shrink: 1;
     justify-content: center;
@@ -47,7 +45,7 @@ export default {
   }
 
   &__text-field {
-    width: 100%;
+    flex-basis: 100%;
     height: 100%;
 
     display: flex;
@@ -71,7 +69,6 @@ export default {
     }
 
     &::placeholder {
-      width: 100%;
       font-family: "Open Sans", sans-serif;
       font-size: 13px;
       font-weight: normal;

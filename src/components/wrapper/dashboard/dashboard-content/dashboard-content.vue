@@ -23,6 +23,9 @@ export default {
 
 <style lang="scss">
 .dashboard-container {
+  display: flex;
+  flex-flow: column;
+  flex: 0 0 100%;
   width: 100%;
   height: min-content;
   padding: 16px 28px 32px 26px;
@@ -30,9 +33,10 @@ export default {
 }
 
 .dashboard-content {
-  width: 100%;
-  height: 100%;
   display: flex;
+  flex-basis: 100%;
+
+  height: 100%;
   flex-flow: column;
   justify-items: flex-start;
   align-items: flex-start;
