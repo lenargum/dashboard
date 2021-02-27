@@ -32,7 +32,7 @@ $drawer-width: 61px;
   width: $drawer-width;
 }
 .dashboard {
-  width: 100%;
+  width: calc(100% - #{$drawer-width});
   height: 100%;
 }
 </style>

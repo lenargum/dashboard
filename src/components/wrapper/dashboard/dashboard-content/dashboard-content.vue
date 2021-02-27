@@ -26,7 +26,6 @@ export default {
   display: flex;
   flex-flow: column;
   flex: 0 0 100%;
-  width: 100%;
   height: min-content;
   padding: 16px 28px 32px 26px;
   border-bottom: 1px solid #e7e7e7;
