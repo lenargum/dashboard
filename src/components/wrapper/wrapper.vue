@@ -11,7 +11,10 @@ import Dashboard from "@/components/wrapper/dashboard/dashboard";
 
 export default {
   name: "Wrapper",
-  components: {Dashboard, Drawer}
+  components: {
+    Dashboard,
+    Drawer
+  }
 }
 </script>
 
@@ -25,12 +28,14 @@ export default {
   justify-content: flex-start;
 
 }
+
 $drawer-width: 61px;
 .drawer {
   background-color: #313131;
   height: 100%;
   width: $drawer-width;
 }
+
 .dashboard {
   width: calc(100% - #{$drawer-width});
   height: 100%;
