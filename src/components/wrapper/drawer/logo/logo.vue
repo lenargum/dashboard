@@ -33,7 +33,7 @@ export default {
   width: auto;
 
   background-color: transparent;
-  margin: 12px 0 12px;
+  margin: 7px 0 7px;
 
   &__top_lines {
     display: flex;
