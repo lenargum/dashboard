@@ -3,7 +3,9 @@
     <div class="map">
       <MapControl/>
       <div class="map__content">
-        <MapSvg/>
+        <svg width="873px" height="456px">
+          <use href="map.svg#map-content"/>
+        </svg>
       </div>
     </div>
   </div>
@@ -11,13 +13,11 @@
 
 <script>
 import MapControl from "@/components/wrapper/dashboard/dashboard-content/map/map-control/map-control";
-import MapSvg from "@/assets/img/content/map/map-content.svg"
 
 export default {
   name: "Map",
   components: {
-    MapControl,
-    MapSvg
+    MapControl
   }
 }
 </script>

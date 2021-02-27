@@ -12,8 +12,8 @@ import DashboardContent from "@/components/wrapper/dashboard/dashboard-content/d
 export default {
   name: "Dashboard",
   components: {
-    DashboardContent,
-    Nav
+    Nav,
+    DashboardContent
   },
 }
 </script>

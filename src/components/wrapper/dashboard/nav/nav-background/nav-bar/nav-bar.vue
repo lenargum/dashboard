@@ -1,7 +1,9 @@
 <template>
   <div class="nav-bar">
     <div class="nav-bar-menu-item">
-      <PowerIcon/>
+      <svg width="14px" height="15px">
+        <use href="map.svg#power"/>
+      </svg>
       <div class="nav-bar-menu-item-dropdown">
         <div class="nav-bar-menu-item-dropdown__item span">
           Profile
@@ -12,47 +14,43 @@
       </div>
     </div>
     <div class="nav-bar-menu-item">
-      <SettingIcon/>
-      <SettingNotificationBadge class="nav-bar-menu-item_notification-badge"/>
+      <svg width="29px" height="32px">
+        <use href="map.svg#setting"/>
+      </svg>
+      <svg width="29px" height="32px" class="nav-bar-menu-item_notification-badge">
+        <use href="map.svg#setting-notification-badge"/>
+      </svg>
     </div>
     <div class="nav-bar-menu-item">
-      <ChatIcon/>
-      <ChatNotificationBadge class="nav-bar-menu-item_notification-badge"/>
+      <svg width="30px" height="26px">
+        <use href="map.svg#chat"/>
+      </svg>
+      <svg width="30px" height="26px" class="nav-bar-menu-item_notification-badge">
+        <use href="map.svg#chat-notification-badge"/>
+      </svg>
     </div>
     <div class="nav-bar-menu-item">
-      <NotificationIcon/>
-      <NotificationNotificationBadge class="nav-bar-menu-item_notification-badge"/>
+      <svg width="27px" height="28px">
+        <use href="map.svg#notification"/>
+      </svg>
+      <svg width="27px" height="28px" class="nav-bar-menu-item_notification-badge">
+        <use href="map.svg#notification-notification-badge"/>
+      </svg>
     </div>
     <div class="nav-bar-menu-item">
-      <FullscreenIcon/>
+      <svg width="16px" height="16px">
+        <use href="map.svg#fullscreen"/>
+      </svg>
     </div>
   </div>
 </template>
 
 <script>
-import PowerIcon from "@/assets/img/nav/nav-bar-icons/power.svg"
-import SettingIcon from "@/assets/img/nav/nav-bar-icons/setting.svg"
-import SettingNotificationBadge from "@/assets/img/nav/nav-bar-icons/setting-notification-badge.svg"
-import ChatIcon from "@/assets/img/nav/nav-bar-icons/chat.svg"
-import ChatNotificationBadge from "@/assets/img/nav/nav-bar-icons/chat-notification-badge.svg"
-import NotificationIcon from "@/assets/img/nav/nav-bar-icons/notification.svg"
-import NotificationNotificationBadge from "@/assets/img/nav/nav-bar-icons/notification-notification-badge.svg"
-import FullscreenIcon from "@/assets/img/nav/nav-bar-icons/fullscreen.svg"
-
 // todo: crop icons and notification badges to make them look more centered
 
 export default {
   name: "NavBar",
-  components: {
-    PowerIcon,
-    SettingIcon,
-    SettingNotificationBadge,
-    ChatIcon,
-    ChatNotificationBadge,
-    NotificationIcon,
-    NotificationNotificationBadge,
-    FullscreenIcon
-  }
+  components: {}
 }
 </script>
 

@@ -4,13 +4,19 @@
       <div class="menu-section__title">MAIN</div>
       <div class="menu-items">
         <div class="menu-item">
-          <DashboardIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="16px" height="15px">
+            <use href="map.svg#dashboard"/>
+          </svg>
         </div>
         <div class="menu-item menu-item_active">
-          <BrushIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="19px" height="19px">
+            <use href="map.svg#brush"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <PaletteIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="18px" height="18px">
+            <use href="map.svg#palette"/>
+          </svg>
         </div>
       </div>
     </div>
@@ -18,28 +24,44 @@
       <div class="menu-section__title">COMP</div>
       <div class="menu-items">
         <div class="menu-item">
-          <FourSquaresIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="12px" height="12px">
+            <use href="map.svg#4squares"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <EditorsIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="15px" height="16px">
+            <use href="map.svg#editors"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <TableIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="16px" height="14px">
+            <use href="map.svg#table"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <PlayIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="11px" height="13px">
+            <use href="map.svg#play"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <FormsIcon class="menu-section__menu-icon_stroke-only"/>
+          <svg class="menu-section__menu-icon_stroke-only" width="16.5px" height="16.5px">
+            <use href="map.svg#forms"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <SmileIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="15px" height="15px">
+            <use href="map.svg#smile"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <UploadIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="17px" height="15px">
+            <use href="map.svg#upload"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <InfoIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="15px" height="15px">
+            <use href="map.svg#info"/>
+          </svg>
         </div>
       </div>
     </div>
@@ -47,13 +69,19 @@
       <div class="menu-section__title">DATA</div>
       <div class="menu-items">
         <div class="menu-item">
-          <GraphIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="17px" height="17px">
+            <use href="map.svg#graph"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <LocationIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="20px" height="17px">
+            <use href="map.svg#location"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <ChartsIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="22px" height="19px">
+            <use href="map.svg#charts"/>
+          </svg>
         </div>
       </div>
     </div>
@@ -61,13 +89,19 @@
       <div class="menu-section__title">PAGES</div>
       <div class="menu-items">
         <div class="menu-item">
-          <WarningIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="15px" height="13px">
+            <use href="map.svg#warning"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <LoginIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="18px" height="20px">
+            <use href="map.svg#login"/>
+          </svg>
         </div>
         <div class="menu-item">
-          <DisplayIcon class="menu-section__menu-icon"/>
+          <svg class="menu-section__menu-icon" width="16px" height="15px">
+            <use href="map.svg#display"/>
+          </svg>
         </div>
       </div>
     </div>
@@ -75,49 +109,9 @@
 </template>
 
 <script>
-import DashboardIcon from "@/assets/img/drawer/menu-sections/main/dashboard.svg"
-import BrushIcon from "@/assets/img/drawer/menu-sections/main/brush.svg"
-import PaletteIcon from "@/assets/img/drawer/menu-sections/main/palette.svg"
-
-import FourSquaresIcon from "@/assets/img/drawer/menu-sections/comp/4squares.svg"
-import EditorsIcon from "@/assets/img/drawer/menu-sections/comp/editors.svg"
-import TableIcon from "@/assets/img/drawer/menu-sections/comp/table.svg"
-import PlayIcon from "@/assets/img/drawer/menu-sections/comp/play.svg"
-import FormsIcon from "@/assets/img/drawer/menu-sections/comp/forms.svg"
-import SmileIcon from "@/assets/img/drawer/menu-sections/comp/smile.svg"
-import UploadIcon from "@/assets/img/drawer/menu-sections/comp/upload.svg"
-import InfoIcon from "@/assets/img/drawer/menu-sections/comp/info.svg"
-
-import GraphIcon from "@/assets/img/drawer/menu-sections/data/graph.svg"
-import LocationIcon from "@/assets/img/drawer/menu-sections/data/location.svg"
-import ChartsIcon from "@/assets/img/drawer/menu-sections/data/charts.svg"
-
-import WarningIcon from "@/assets/img/drawer/menu-sections/pages/warning.svg"
-import LoginIcon from "@/assets/img/drawer/menu-sections/pages/login.svg"
-import DisplayIcon from "@/assets/img/drawer/menu-sections/pages/display.svg"
-
-
 export default {
   name: "MenuSections",
-  components: {
-    DashboardIcon,
-    BrushIcon,
-    PaletteIcon,
-    FourSquaresIcon,
-    EditorsIcon,
-    TableIcon,
-    PlayIcon,
-    FormsIcon,
-    SmileIcon,
-    UploadIcon,
-    InfoIcon,
-    GraphIcon,
-    LocationIcon,
-    ChartsIcon,
-    WarningIcon,
-    LoginIcon,
-    DisplayIcon
-  },
+  components: {},
 }
 </script>
 
@@ -173,6 +167,7 @@ export default {
   flex-flow: column;
   width: 100%;
   height: auto;
+
   &::before {
     content: "";
     height: 1px;

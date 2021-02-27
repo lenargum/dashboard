@@ -1,10 +1,11 @@
 <template>
   <div class="drawer-profile">
     <div class="avatar">
-      <img class="avatar avatar__pic" :style="cssVars"
+      <img class="avatar avatar__pic"
            src="@/assets/img/drawer/drawer-profile/stub-man.png" alt="">
-      <!--      <AvatarMask class="avatar__mask"/>-->
-      <AvatarStatus class="avatar avatar__status"/>
+      <svg class="avatar avatar__status" width="37px" height="39px">
+        <use href="map.svg#avatar_status"/>
+      </svg>
     </div>
     <div class="drawer-profile__initials">MJ</div>
     <div class="drawer-profile__position">Graphic Designer</div>
@@ -12,21 +13,11 @@
 </template>
 
 <script>
-import AvatarStatus from "@/assets/img/drawer/drawer-profile/avatar_status.svg"
 
 
 export default {
   name: "DrawerProfile",
-  components: {
-    AvatarStatus
-  },
-  computed: {
-    cssVars() {
-      return {
-        'mask': 'url(' + require('@/assets/img/drawer/drawer-profile/avatar_mask.svg') + ') no-repeat center / contain;'
-      }
-    }
-  }
+  components: {},
 }
 </script>
 

@@ -1,7 +1,9 @@
 <template>
   <div class="nav-background">
-    <div class="nav__menu-icon" onclick="myFunction()">
-      <MenuBlackIcon/>
+    <div class="nav__menu-icon" v-on:click="closeMenu()">
+      <svg width="15px" height="11px">
+        <use href="map.svg#menu-icon_black"/>
+      </svg>
     </div>
     <div class="nav-search-and-navbar">
       <SearchBar/>
@@ -13,14 +15,22 @@
 <script>
 import SearchBar from "@/components/wrapper/dashboard/nav/nav-background/search-bar/search-bar";
 import NavBar from "@/components/wrapper/dashboard/nav/nav-background/nav-bar/nav-bar";
-import MenuBlackIcon from "@/assets/img/nav/menu-icon_black.svg"
 
 export default {
   name: "NavBackground",
   components: {
     NavBar,
     SearchBar,
-    MenuBlackIcon
+  },
+  methods: {
+    closeMenu() {
+      var x = document.getElementById("drawer");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
   }
 }
 </script>
@@ -45,7 +55,7 @@ export default {
   display: flex;
   flex-flow: row;
   align-content: space-between;
-  justify-items: center;
+  justify-content: center;
   width: -webkit-fill-available;
   height: 60px;
 }

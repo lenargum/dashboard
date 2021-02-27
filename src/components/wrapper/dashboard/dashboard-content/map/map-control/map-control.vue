@@ -1,23 +1,22 @@
 <template>
   <div class="map-control">
     <div class="map-control-container">
-      <PlusSignIcon/>
+      <svg width="15px" height="15px">
+        <use href="map.svg#plus-sign"/>
+      </svg>
     </div>
     <div class="map-control-container">
-      <MinusSignIcon/>
+      <svg width="15px" height="2px">
+        <use href="map.svg#minus-sign"/>
+      </svg>
     </div>
   </div>
 </template>
 
 <script>
-import PlusSignIcon from "@/assets/img/content/map/control/plus-sign.svg"
-import MinusSignIcon from "@/assets/img/content/map/control/minus-sign.svg"
-
 export default {
   name: "MapControl",
   components: {
-    PlusSignIcon,
-    MinusSignIcon
   }
 }
 </script>

@@ -1,20 +1,18 @@
 <template>
   <div class="search-bar">
     <div class="search-bar__icon">
-      <MagnifierIcon/>
+      <svg width="12px" height="12px">
+        <use href="map.svg#magnifier"/>
+      </svg>
     </div>
     <input class="search-bar__text-field" type="text" placeholder="Search Something...">
   </div>
 </template>
 
 <script>
-import MagnifierIcon from "@/assets/img/nav/search-bar/search-bar__icon.svg"
-
 export default {
   name: "SearchBar",
-  components: {
-    MagnifierIcon
-  }
+  components: {}
 }
 </script>
 
@@ -32,7 +30,8 @@ export default {
   border-radius: 20px;
 
   margin: 13px 12px 14px 12px;
-  padding: 11px 15px 10px 17px;
+  padding: 0 15px 0 17px;
+
   border: solid 1px #cccccc;
   background-color: #fff;
   overflow: hidden;
@@ -42,6 +41,7 @@ export default {
     flex-shrink: 1;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
     &:hover {
       cursor: pointer;

@@ -1,20 +1,19 @@
 <template>
   <div class="menu-icon">
     <div class="menu-icon__background">
-      <MenuIconSvg/>
+      <svg width="15px" height="11px">
+        <use href="map.svg#menu-icon"/>
+      </svg>
     </div>
     <div class="menu-icon__underline"></div>
   </div>
 </template>
 
 <script>
-import MenuIconSvg from "@/assets/img/drawer/menu-icon/icon.svg"
 
 export default {
   name: "MenuIcon",
-  components: {
-    MenuIconSvg
-  }
+  components: {}
 }
 </script>
 

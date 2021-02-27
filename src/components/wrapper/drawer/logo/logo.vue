@@ -1,27 +1,26 @@
 <template>
   <div class="logo">
     <div class="logo__top_lines">
-      <LogoTopLines/>
+      <svg width="52px" height="6px">
+        <use href="map.svg#top_lines"/>
+      </svg>
     </div>
     <div class="logo__title">ADS</div>
     <div class="logo__version">V2.00</div>
     <div class="logo__bottom_lines">
-      <LogoBottomLines/>
+      <svg width="53px" height="5px">
+        <use href="map.svg#bottom_lines"/>
+      </svg>
     </div>
   </div>
 </template>
 
 <script>
-import LogoTopLines from "@/assets/img/drawer/logo/top_lines.svg"
-import LogoBottomLines from "@/assets/img/drawer/logo/bottom_lines.svg"
 
 
 export default {
   name: "Logo",
-  components: {
-    LogoTopLines,
-    LogoBottomLines
-  }
+  components: {}
 }
 </script>
 
