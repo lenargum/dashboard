@@ -3,8 +3,10 @@
     <div class="nav__menu-icon">
       <MenuBlackIcon/>
     </div>
-    <SearchBar/>
-    <NavBar/>
+    <div class="nav-search-and-navbar">
+      <SearchBar/>
+      <NavBar/>
+    </div>
   </div>
 </template>
 
@@ -37,6 +39,15 @@ export default {
   -webkit-box-shadow: 0 0 18px rgba(17, 17, 17, .12);
   -moz-box-shadow: 0 0 18px rgba(17, 17, 17, .12);
   box-shadow: 0 0 18px rgba(17, 17, 17, .12);
+}
+
+.nav-search-and-navbar {
+  display: flex;
+  flex-flow: row;
+  align-content: space-between;
+  justify-items: center;
+  width: -webkit-fill-available;
+  height: 60px;
 }
 
 .nav__menu-icon {
