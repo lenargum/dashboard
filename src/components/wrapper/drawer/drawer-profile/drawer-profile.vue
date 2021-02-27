@@ -7,9 +7,7 @@
       <AvatarStatus class="avatar avatar__status"/>
     </div>
     <div class="drawer-profile__initials">MJ</div>
-    <div class="drawer-profile__position">Graphic
-      Designer
-    </div>
+    <div class="drawer-profile__position">Graphic Designer</div>
   </div>
 </template>
 
@@ -33,18 +31,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//.test {
-//  width: 30px;
-//  height: 30px;
-//  //background: red;
-//  mask-image: url(/avatar.svg);
-//  -webkit-mask-position: center;
-//  -webkit-mask-size: 100% 100%;
-//  display: flex;
-//  align-items: center;
-//  justify-content: center;
-//}
-
 .drawer-profile {
   display: flex;
   flex-flow: column;
@@ -71,8 +57,7 @@ export default {
   }
 
   &__position {
-    width: min-content;
-    height: min-content;
+    word-break: break-word;
     font-family: 'OpenSans', sans-serif;
     font-size: 12px;
     font-weight: normal;

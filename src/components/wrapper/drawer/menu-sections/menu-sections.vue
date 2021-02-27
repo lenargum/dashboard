@@ -30,7 +30,7 @@
           <PlayIcon class="menu-section__menu-icon"/>
         </div>
         <div class="menu-item">
-          <FormsIcon class="menu-section__menu-icon"/>
+          <FormsIcon class="menu-section__menu-icon_stroke-only"/>
         </div>
         <div class="menu-item">
           <SmileIcon class="menu-section__menu-icon"/>
@@ -155,6 +155,17 @@ export default {
 
     padding: 15px 0 15px;
   }
+
+  &__menu-icon {
+    text-align: center;
+    fill: rgb(193, 193, 193);
+
+    &_stroke-only {
+      text-align: center;
+      stroke: rgb(193, 193, 193);
+      fill: none;
+    }
+  }
 }
 
 .menu-items {
@@ -186,19 +197,16 @@ export default {
     cursor: pointer;
   }
 
-  &:hover .child{
+  &:hover .child {
     color: red;
   }
 }
 
-.menu-section__menu-icon {
-  text-align: center;
-  fill: rgb(193, 193, 193);
-  width: auto;
-  height: auto;
+.menu-item:hover .menu-section__menu-icon {
+  fill: red;
 }
 
-.menu-item:hover .menu-section__menu-icon{
-  fill: red;
+.menu-item:hover .menu-section__menu-icon_stroke-only {
+  stroke: red;
 }
 </style>

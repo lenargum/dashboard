@@ -29,8 +29,8 @@ export default {
 .logo {
   display: flex;
   flex-flow: column;
-  height: auto;
-  width: auto;
+  align-items: center;
+  justify-content: center;
 
   background-color: transparent;
   margin: 7px 0 7px;

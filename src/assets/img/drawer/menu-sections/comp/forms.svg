@@ -2,10 +2,10 @@
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         width="16.5px" height="16.5px">
-    <path fill-rule="evenodd"  stroke="rgb(193, 193, 193)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+    <path fill-rule="evenodd" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
           d="M0.500,0.500 L9.500,0.500 L9.500,9.344 L0.500,9.344 L0.500,0.500 Z"/>
-    <path fill-rule="evenodd"  stroke="rgb(193, 193, 193)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+    <path fill-rule="evenodd" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
           d="M3.500,3.437 L12.500,3.437 L12.500,12.281 L3.500,12.281 L3.500,3.437 Z"/>
-    <path fill-rule="evenodd"  stroke="rgb(193, 193, 193)" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+    <path fill-rule="evenodd" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
           d="M6.500,6.656 L15.500,6.656 L15.500,15.500 L6.500,15.500 L6.500,6.656 Z"/>
 </svg>
