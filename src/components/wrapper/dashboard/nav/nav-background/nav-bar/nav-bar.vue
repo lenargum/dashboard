@@ -1,22 +1,28 @@
 <template>
   <div class="nav-bar">
     <div class="nav-bar-menu-item">
-      <PowerIcon />
+      <PowerIcon/>
       <div class="nav-bar-menu-item-dropdown">
-        <span>Log out</span>
+        <div class="nav-bar-menu-item-dropdown__item span">
+          Profile
+        </div>
+        <div class="nav-bar-menu-item-dropdown__item span">
+          Log out
+        </div>
+        <!--        <span>Log out</span>-->
       </div>
     </div>
     <div class="nav-bar-menu-item">
-      <SettingIcon />
+      <SettingIcon/>
     </div>
     <div class="nav-bar-menu-item">
-      <ChatIcon />
+      <ChatIcon/>
     </div>
     <div class="nav-bar-menu-item">
-      <NotificationIcon />
+      <NotificationIcon/>
     </div>
     <div class="nav-bar-menu-item">
-      <FullscreenIcon />
+      <FullscreenIcon/>
     </div>
   </div>
 </template>
@@ -86,6 +92,14 @@ export default {
 
       border: solid 1px #cccccc;
       z-index: 1;
+
+      &__item {
+        padding: 3px 3px;
+
+        &:hover {
+          background-color: #DCDCDC;
+        }
+      }
     }
 
     &:hover &-dropdown {
