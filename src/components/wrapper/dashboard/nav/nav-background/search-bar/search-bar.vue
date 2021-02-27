@@ -1,11 +1,9 @@
 <template>
   <div class="search-bar">
     <div class="search-bar__icon">
-      <MagnifierIcon />
+      <MagnifierIcon/>
     </div>
-    <div class="search-bar__text-field">
-      <div class="search-bar__hint">Search Something...</div>
-    </div>
+    <input class="search-bar__text-field" type="text" placeholder="Search Something...">
   </div>
 </template>
 
@@ -28,7 +26,6 @@ export default {
   justify-content: flex-start;
   align-items: center;
   width: 330px;
-  height: 33px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -48,20 +45,6 @@ export default {
     align-items: center;
   }
 
-  &__hint {
-    width: 100%;
-    height: min-content;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #8b8b8b;
-  }
-
   &__text-field {
     width: 100%;
     height: 100%;
@@ -70,6 +53,34 @@ export default {
     flex-flow: row nowrap;
     justify-items: flex-start;
     align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1F1F1F;
+    border: none;
+    padding: 1px 2px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      width: 100%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      //line-height: 1.2;
+      letter-spacing: normal;
+      text-align: left;
+      color: #8b8b8b;
+    }
   }
 }
 </style>
