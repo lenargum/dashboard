@@ -1,6 +1,6 @@
 <template>
   <div class="nav-background">
-    <div class="nav__menu-icon">
+    <div class="nav__menu-icon" onclick="myFunction()">
       <MenuBlackIcon/>
     </div>
     <div class="nav-search-and-navbar">

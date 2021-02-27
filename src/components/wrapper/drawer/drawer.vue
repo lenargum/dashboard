@@ -1,5 +1,5 @@
 <template>
-  <div class="drawer">
+  <div class="drawer" id="drawer">
     <Logo/>
     <DrawerProfile/>
     <MenuIcon/>
