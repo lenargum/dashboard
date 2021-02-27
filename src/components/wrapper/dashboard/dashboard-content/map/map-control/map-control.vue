@@ -30,6 +30,7 @@ export default {
   flex-flow: column;
   width: 41px;
   border: solid 1px #cccccc;
+  background-color: rgba(255, 255, 255, 0.5);
 
   &-container {
     display: flex;
@@ -37,6 +38,11 @@ export default {
     height: 41px;
     align-items: center;
     justify-content: center;
+
+    &:hover {
+      background-color: rgba(229, 229, 229, 0.5);
+      cursor: pointer;
+    }
   }
 
   .map-control-container + .map-control-container {
