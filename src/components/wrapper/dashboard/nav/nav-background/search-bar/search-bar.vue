@@ -42,6 +42,10 @@ export default {
     flex-shrink: 1;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__text-field {
