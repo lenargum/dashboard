@@ -229,7 +229,7 @@ export default {
     position: relative;
 
     display: flex;
-    flex-basis: 100%;
+    flex-flow: row;
     flex-flow: row nowrap;
     gap: 8px;
     align-items: center;
