@@ -1,9 +1,21 @@
-html, body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
+<template>
+  <div class="wrapper">
+    <Drawer/>
+    <Dashboard/>
+  </div>
+</template>
 
+<script>
+import Drawer from "@/components/wrapper/drawer/drawer";
+import Dashboard from "@/components/wrapper/dashboard/dashboard";
+
+export default {
+  name: "Wrapper",
+  components: {Dashboard, Drawer}
+}
+</script>
+
+<style lang="scss" scoped>
 .wrapper {
   display: flex;
   width: 100%;
@@ -13,24 +25,14 @@ html, body {
   justify-content: flex-start;
 
 }
-
 $drawer-width: 61px;
 .drawer {
   background-color: #313131;
   height: 100%;
   width: $drawer-width;
 }
-
 .dashboard {
   width: calc(100% - #{$drawer-width});
   height: 100%;
 }
-
-/*
-Lato-Bold
-Montserrat-Regular
-OpenSans
-OpenSans-Bold
-OpenSans-Semibold
-*/
-
+</style>
