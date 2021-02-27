@@ -1,75 +1,78 @@
 <template>
-  <div class="dashboard-container statistics">
-    <div class="statistics-container">
-      <div class="statistics-heading__icon">
-        <CartIcon/>
-      </div>
-      <div class="statistics-heading">
-        <h5>New Orders</h5>
-        <div class="statistics-heading__arrow">
-          <ArrowUpIcon/>
+  <div class="statistics">
+    <div class="statistics">
+      <div class="statistics-container dashboard-container">
+        <div class="statistics__icon">
+          <CartIcon/>
         </div>
-        <div class="statistics-heading__percent-up">6.31%</div>
-      </div>
-      <div class="statistics__big-number">345</div>
-      <div class="statistics__graph">
-        <Graph1Svg/>
-      </div>
-    </div>
-    <div class="statistics-container">
-      <div class="statistics-heading__icon">
-        <DollarIcon/>
-      </div>
-      <div class="statistics-heading">
-        <h5>Total Revenue</h5>
-        <div class="statistics-heading__arrow">
-          <ArrowDownIcon/>
-        </div>
-        <div class="statistics-heading__percent-down">1.4%</div>
-      </div>
-      <div class="statistics__big-number">$25.534</div>
-      <div class="statistics__graph">
-        <Graph2Svg/>
-      </div>
-    </div>
-    <div class="statistics-container">
-      <div class="statistics-heading__icon">
-        <FormIcon/>
-      </div>
-      <div class="statistics-heading">
-        <h5>Task Complete</h5>
-        <div class="statistics-heading__arrow">
-          <ArrowDownIcon/>
-        </div>
-        <div class="statistics-heading__percent-down">0.7%</div>
-      </div>
-      <div class="statistics__big-number">123</div>
-      <div class="statistics-vertical-graphs">
-        <div class="statistics-vertical-graph">
-          <div class="statistics-vertical-graph-header">
-            <div class="statistics-vertical-graph-header__title">
-              Today
-            </div>
-            <div class="statistics-vertical-graph-header__percent-today">
-              67%
-            </div>
+        <div class="statistics-heading">
+          <h5>New Orders</h5>
+          <div class="statistics-heading__arrow">
+            <ArrowUpIcon/>
           </div>
-          <VerticalGraph1 class="statistics-vertical-graph__graph"/>
+          <div class="statistics-heading__percent-up">6.31%</div>
         </div>
-        <div class="statistics-vertical-graph">
-          <div class="statistics-vertical-graph-header">
-            <div class="statistics-vertical-graph-header__title">
-              Yesterday
-            </div>
-            <div class="statistics-vertical-graph-header__percent-yesterday">
-              78%
-            </div>
+        <div class="statistics__big-number">345</div>
+        <div class="statistics__graph">
+          <Graph1Svg/>
+        </div>
+      </div>
+      <div class="statistics-container dashboard-container">
+        <div class="statistics__icon">
+          <DollarIcon/>
+        </div>
+        <div class="statistics-heading">
+          <h5>Total Revenue</h5>
+          <div class="statistics-heading__arrow">
+            <ArrowDownIcon/>
           </div>
-          <VerticalGraph2 class="statistics-vertical-graph__graph"/>
+          <div class="statistics-heading__percent-down">1.4%</div>
+        </div>
+        <div class="statistics__big-number">$25.534</div>
+        <div class="statistics__graph">
+          <Graph2Svg/>
+        </div>
+      </div>
+      <div class="statistics-container dashboard-container">
+        <div class="statistics__icon">
+          <FormIcon/>
+        </div>
+        <div class="statistics-heading">
+          <h5>Task Complete</h5>
+          <div class="statistics-heading__arrow">
+            <ArrowDownIcon/>
+          </div>
+          <div class="statistics-heading__percent-down">0.7%</div>
+        </div>
+        <div class="statistics__big-number">123</div>
+        <div class="statistics-vertical-graphs">
+          <div class="statistics-vertical-graph">
+            <div class="statistics-vertical-graph-header">
+              <div class="statistics-vertical-graph-header__title">
+                Today
+              </div>
+              <div class="statistics-vertical-graph-header__percent-today">
+                67%
+              </div>
+            </div>
+            <VerticalGraph1 class="statistics-vertical-graph__graph"/>
+          </div>
+          <div class="statistics-vertical-graph">
+            <div class="statistics-vertical-graph-header">
+              <div class="statistics-vertical-graph-header__title">
+                Yesterday
+              </div>
+              <div class="statistics-vertical-graph-header__percent-yesterday">
+                78%
+              </div>
+            </div>
+            <VerticalGraph2 class="statistics-vertical-graph__graph"/>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -101,10 +104,12 @@ export default {
 
 <style lang="scss" scoped>
 .statistics {
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
   display: flex;
   flex-basis: 100%;
   flex-flow: row;
+  width: -webkit-fill-available;
 
   &-container {
     display: flex;
@@ -113,8 +118,18 @@ export default {
     align-items: flex-start;
     flex-basis: 100%;
     height: min-content;
-    padding: 22px 16px 22px 37px;
+    //padding: 22px 16px 22px 37px;
     position: relative;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 10%;
+    right: 7%;
   }
 
   .statistics-container + .statistics-container {
@@ -131,15 +146,7 @@ export default {
     gap: 8px;
     align-items: center;
 
-    &__icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
-      position: absolute;
-      top: 10%;
-      right: 7%;
-    }
 
     &__arrow {
     }

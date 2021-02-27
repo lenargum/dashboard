@@ -25,9 +25,9 @@ export default {
 .dashboard-container {
   display: flex;
   flex-flow: column;
-  flex: 0 0 100%;
+  width: -webkit-fill-available;
   height: min-content;
-  padding: 16px 28px 32px 26px;
+  padding: 16px 40px 32px 40px;
   border-bottom: 1px solid #e7e7e7;
 }
 

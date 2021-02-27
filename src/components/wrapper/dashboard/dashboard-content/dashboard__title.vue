@@ -1,7 +1,9 @@
 <template>
-  <div class="dashboard-container dashboard__title">
-    <h1>Dashboard</h1>
-    <h4>Welcome to Admin Sayang, Responsive Web Admin Template</h4>
+  <div class="dashboard-container">
+    <div class="dashboard__title">
+      <h1>Dashboard</h1>
+      <h4>Welcome to Admin Sayang, Responsive Web Admin Template</h4>
+    </div>
   </div>
 </template>
 

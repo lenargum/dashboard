@@ -1,8 +1,10 @@
 <template>
-  <div class="dashboard-container map">
-    <MapControl/>
-    <div class="map__content">
-      <MapSvg/>
+  <div class="dashboard-container">
+    <div class="map">
+      <MapControl/>
+      <div class="map__content">
+        <MapSvg/>
+      </div>
     </div>
   </div>
 </template>
