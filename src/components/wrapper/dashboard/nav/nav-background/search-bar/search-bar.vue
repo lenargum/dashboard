@@ -25,7 +25,8 @@ export default {
   flex-flow: row-reverse nowrap;
   justify-content: flex-start;
   align-items: center;
-  width: 330px;
+  width: 100%;
+  max-width: 250px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
